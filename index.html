@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+		<title>MP Hands: Gesti (Victory + Thumbs Up)</title>
+
+		<script src="https://unpkg.com/@tensorflow/tfjs-core@3.7.0/dist/tf-core.min.js"></script>
+		<script src="https://unpkg.com/@tensorflow/tfjs-backend-webgl@3.7.0/dist/tf-backend-webgl.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/hand-pose-detection@2.0.0/dist/hand-pose-detection.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4.1646424915/hands.min.js"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/fingerpose@0.1.0/dist/fingerpose.min.js"></script>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+
+		<style>
+			* {
+				box-sizing: border-box;
+				user-select: none;
+			}
+			html,
+			body {
+				height: 100%;
+			}
+			body {
+				width: 100%;
+				background-color: white;
+				font-family: 'Roboto Mono', monospace;
+				font-weight: 400;
+				font-size: 40px;
+				overflow: hidden;
+			}
+			.container {
+
+				position: relative;
+			}
+			.layer {
+				position: absolute;
+			}
+			canvas {
+				display: block;
+			}
+			video {
+				margin-top: -5%;
+				margin-left: -8px;
+				margin-bottom: -8px;
+				margin-right: -8px;
+				transform: scaleX(-1);
+				display: block;
+			}
+			.trasla {
+				translate: 100%;
+			}
+			.footerintro {
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 1.2;
+			position: fixed;
+			margin-bottom: 0px;
+			bottom: 0; 
+			width: 100%;
+			padding-bottom: 10px;
+			padding-top: 10px;
+			padding-left: 10px;
+
+			}
+
+			footer {
+			background-color: white;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+			}
+
+			.s2 {
+				grid-column: span 2;
+			}
+
+			.s3 {
+				grid-column: span 3;
+			}
+
+			.s4 {
+				grid-column: span 4;
+			}
+
+			.s5 {
+				grid-column: span 5;
+			}
+
+			.s6 {
+				grid-column: span 6;
+			}
+
+			.s7 {
+				grid-column: span 7;
+			}
+
+			.s8 {
+				grid-column: span 8;
+			}
+
+			.s9 {
+				grid-column: span 9;
+			}
+
+			.s10 {
+				grid-column: span 10;
+			}
+			
+			a:link {
+			text-decoration: none;
+			color: black;
+			}
+
+			a:visited {
+			text-decoration: none;
+			color: black;
+			}
+
+			a:hover {
+			text-decoration: none;
+			color: black;
+			font-weight: 900;
+			
+			}
+
+			.inserimento {
+				top: 0;
+			}
+
+
+		</style>
+	</head>
+
+
+	
+	<body>
+		<div class="container">
+			<video class="layer trasla" id="traslatore" playsinline></video>
+			<canvas class="layer"><script type="module" src="src/index.js"></script></canvas>
+			
+			
+			<p class="inserimento" id="testo"></p>
+
+			<p class="inserimento" id="istruzioni"></p>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+		<script>
+			WebFont.load({
+				google: {
+					families: ['Roboto Mono: 100,200,300,400,700']
+				}
+			});
+		</script>
+		<script type="module" src="src/gestures.js"></script>
+	</body>
+	<footer class="footerintro">
+
+			
+			
+			
+		<div class="s3">
+			<a href="https://ixd-supsi.github.io/2023/progetti/3_manipolazione/">Elaborato 3 <br>
+			Manipolazione<br> 
+			Lingua dei segni <br></a>
+		</div>
+
+
+		<div class="s3">
+			CV2<br>
+			Massimo Bordogna <br>
+			SUPSI DACD Mendrisio <br>
+		</div>
+		<div class="s3">
+			<a href="https://ixd-supsi.github.io/2023/">
+			CV 427.01 Interaction Design <br></a>
+			Andreas Gysin <br>
+			Giovanni Profeta <br>
+		</div>
+	</footer>
+</html>
