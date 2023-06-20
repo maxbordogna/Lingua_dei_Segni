@@ -885,6 +885,15 @@ let ultimaLettera = -1;
 			
 
 			if (name && handedness == 'Right') {
+				for (const [idx, keypoint] of hand.keypoints.entries()) {
+					const name = keypoint.name.split('_')[0].toString().toLowerCase()
+					const color = landmarkColors[name]
+					point(ctx, keypoint.x, keypoint.y, 12, color)
+					ctx.font = '12px sans-serif'
+					ctx.textAlign = 'center'
+					ctx.fillStyle = 'white'
+					//ctx.fillText(idx,  keypoint.x, keypoint.y + 3)
+				}
 				console.log(counter.getFrameCount());
 				counter
 				console.log(counter.getFrameCount());
@@ -976,7 +985,10 @@ let ultimaLettera = -1;
 			}
 			
 		}
-
+		else if (handedness == "Left"){
+			console.log("cancellooooo");
+			document.getElementById("testo").innerHTML = ""
+		}
 		else {
 					console.log(counter.getFrameCount());
 					counter.restart();
@@ -990,22 +1002,11 @@ let ultimaLettera = -1;
 			
 
 
-		if (handedness == "Right"){
-			for (const [idx, keypoint] of hand.keypoints.entries()) {
-				const name = keypoint.name.split('_')[0].toString().toLowerCase()
-				const color = landmarkColors[name]
-				point(ctx, keypoint.x, keypoint.y, 12, color)
-				ctx.font = '12px sans-serif'
-				ctx.textAlign = 'center'
-				ctx.fillStyle = 'white'
-				//ctx.fillText(idx,  keypoint.x, keypoint.y + 3)
-			}}
+	
 		}
 	}
 
-	else if (hands.length > 1){
-		document.getElementById("testo").innerHTML = ""
-	}
+	
 	else {
 		
 		console.log("check");
@@ -1014,8 +1015,8 @@ let ultimaLettera = -1;
 					ctx.textAlign = 'left'
 					//ctx.fillText(name + " [" + score.toFixed(1) + "]",width/2, height/2)
 					//ctx.fillText(name, width/2, height/2+250/4)
-					ctx.fillText("Mostra una lettera con la mano DESTRA e mantieni la posizione", width/80, height*0.45)
-					ctx.fillText("Mostra DUE mani per cancellare quanto scritto", width/80, height*0.465)
+					ctx.fillText("Mostra una lettera con la mano DESTRA e mantieni la posizione per confermarla", width/80, height*0.45)
+					ctx.fillText("Mostra la mano sinistra per cancellare quanto scritto", width/80, height*0.465)
 
 					//document.getElementById("testo").innerHTML = ""
 	}
