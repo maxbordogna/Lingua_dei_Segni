@@ -13,22 +13,13 @@ Breve video dimostrativo<br>
 https://github.com/maxbordogna/finger_counting/blob/main/img_readme/conteggio_con_le_mani.mp4
 
 ## Introduzione e tema
-La consegna consisteva nell'effettuare una ricerca su un argomento dato legato al tema generale delle mani, nel mio caso si trattava
-del "conteggio con le mani". Dopo aver fatto una ricerca generale per ottenere le informazioni 
-di base, ho stilato la lista dei tre argomenti più importanti da trattare:
-<br>
-<b>storia<br>
-diversità culturali<br>
-sistema binario</b>
+La consegna consisteva nel realizzare un sistema di interfaccia interagibile tramite l'utilizzo delle proprie mani, attraverso la computer vision. Le mani infatti devono essere utilizzate per manipolare il sistema. 
 <br><br>
-Ho quindi proseguito con l'approfondire i tre capitoli, in particolare svariati documenti trovati online 
-di diverse ricerche universitarie mi hanno permesso di ottenere le informazioni necessarie.
-<br><br>
-Oltre alla ricerca è stata inserito un piccolo sistema interattivo che permette (a dipendenza della tipologia di 
-conteggio selezionata) di riconoscere il numero che l'utente mostra alla webcam. 
-<br><br>
-Infine una catalogazione delle principali metodologie di conteggio con le mani racchiude le 
-informazioni essenziali per comprenderle e metterle in pratica.
+Nel mio caso è stato realizzato un sistema di tradizione simultanea dell'alfabeto della lingua dei segni italiana. Lo scopo di questa interfaccia, è proprio quello di permettere a persone non udenti, di comunicare in tempo reale con persone che non conoscono il linguaggio dei segni. L'utilizzatore ha la possibilità di:<br> 
+scrivere, attraverso la lingua dei segni italiana<br> 
+cancellare e ricominciare <br> 
+far leggere al computer quanto scritto<br> 
+
 
 ## Riferimenti progettuali
 Non ho sfruttato un modello preciso come riferimento progettuale, ho riflettuto più che altro sui diversi contenuti 
