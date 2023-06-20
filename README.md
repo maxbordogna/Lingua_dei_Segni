@@ -10,7 +10,7 @@ Autore: Massimo Bordogna
 [MediaPipe demo-ES6](https://ixd-supsi.github.io/2023/esempi/mp_hands/es6/1_landmarks)
 
 Breve video dimostrativo<br>
-https://github.com/maxbordogna/finger_counting/blob/main/img_readme/conteggio_con_le_mani.mp4
+https://github.com/maxbordogna/Lingua_dei_Segni/blob/main/img_readme/lingua_dei_segni.mp4
 
 ## Introduzione e tema
 La consegna consisteva nel realizzare un sistema di interfaccia interagibile tramite l'utilizzo delle proprie mani, attraverso la computer vision. Le mani infatti devono essere utilizzate per manipolare il sistema. 
