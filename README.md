@@ -26,33 +26,32 @@ Non sono stati utilizzati riferimenti progettuali precisi, la piattaforma è sta
 L'unico riferimento sfruttato è stato quello della classica visualizzazione di un programma televisivo tradotto per non udenti. Affianco alla trasmissione infatti, è posta l'immagine del traduttore/traduttrice che in tempo reale racconta quanto viene detto all'interno del programma.
 
 ![tv_lingua_segni](https://github.com/maxbordogna/Lingua_dei_Segni/assets/126773844/d45c3a24-4884-4f07-8a59-969e41386638)
-
+<br><i>Esempio di programma televisivo tradotto per non udenti</i>
 
 
 ## Design dell’interfraccia e modalià di interazione
-Tutte le scelte sono state effettuate per aumentare l'ergonomia del sito attraverso semplicità, chiarezza e coerenza. 
-Tutte le pagine del sito web presentano la medesima impostazione: navigazione in alto a sinistra, footer in basso e contenuti nel centro sinistra della finestra.
-Non è stato fatto uso del colore, lo sfondo è sempre bianco, il testo è sempre nero e le immagini sono in scala di grigi. 
-
-
-Il bottone per tornare al sito web del corso è posto nella sezione con le informazioni del progetto "Antologia a due mani" nel footer in basso a sinistra.<br>
-
-
-L'unica pagina all'interno del sito sviluppata in modo differente, è quella di interazione. Essa presenta 
-una navigazione secondaria che permette di selezionare la tipologia di metodo di conteggio desiderato. L'interazione avviene attraverso la webcam che, 
-riprendendo e trasmettendo quanto avviene di fronte al computer, permette all'utente di interagire direttamente con la piattaforma. 
-Una legenda esemplificativa sul metodo di conteggio selezionato è posta sulla sinistra della pagina e gli elementi interattivi al centro. 
-Dal momento che una mano viene riconosciuta, la scritta scompare e, se il gesto corretto è rappresentato attraverso la mano, il numero corrispondente compare al centro della schermata.
-<br><br>Schermate di:<br>
-interazione base<br>
-[<img src="img_readme/interazione_1.png" width="200" alt="Interazione base">]()<br><br>
-interazione in corso<br>
-[<img src="img_readme/interazione_2.png" width="200" alt="Interazione in corso">]()<br><br>
-catalogazione<br>
-[<img src="img_readme/catalogo.png" width="200" alt="Catalogazione">]()<br><br>
-sistema binario<br>
-[<img src="img_readme/binario.png" width="200" alt="Sistema binario">]()<br><br>
+Il design è quindi estremamente semplice, nello stato di partenza la piattaforma presenta una divisione centrale con a destra ciò che è inquadrato dalla webcam e a sinistra le istruzioni d'uso per l'utente:
 <br>
+Delle immagini rappresentative dell'alfabeto italiano della lingua dei segni e dei testi istruttivi:<br>
+<br>"Mostra una lettera con la mano DESTRA e mantieni la posizione per confermarla"<br>
+"Mostra due mani per cancellare quanto scritto"
+<br><br>
+Nel momento in cui l'utente mostra la mano destra e viene riconosciuta, spariscono le istruzioni e compare in basso a sinistra la lettera riconosciuta e in centro i keypoints della mano visibile nella webcam.
+<br><br>
+Se l'utente mantiene la lettera visibile per qualche secondo essa viene confermata e scritta in alto a sinistra, aggiungendo altre lettere si possono comporre svariate parole.
+<br><br>
+Sollevando due mani l'utente ha la possibilità di cancellare tutto ciò che è stato scritto.
+
+
+
+
+[<img src="img_readme/interazione_1.png" width="200" alt="Interazione base">]()<br>
+Schermata base<br><br>
+[<img src="img_readme/interazione_2.png" width="200" alt="Interazione in corso">]()<br>
+Mano destra riconosciuta<br><br>
+[<img src="img_readme/catalogo.png" width="200" alt="Catalogazione">]()<br>
+Scrittura in corso<br><br>
+
 
 
 ## Tecnologia usata
