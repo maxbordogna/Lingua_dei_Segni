@@ -16,17 +16,14 @@ https://github.com/maxbordogna/finger_counting/blob/main/img_readme/conteggio_co
 La consegna consisteva nel realizzare un sistema di interfaccia interagibile tramite l'utilizzo delle proprie mani, attraverso la computer vision. Le mani infatti devono essere utilizzate per manipolare il sistema. 
 <br><br>
 Nel mio caso è stato realizzato un sistema di tradizione simultanea dell'alfabeto della lingua dei segni italiana. Lo scopo di questa interfaccia, è proprio quello di permettere a persone non udenti, di comunicare in tempo reale con persone che non conoscono il linguaggio dei segni. L'utilizzatore ha la possibilità di:<br> 
-scrivere, attraverso la lingua dei segni italiana<br> 
-cancellare e ricominciare <br> 
-far leggere al computer quanto scritto<br> 
+- scrivere, attraverso la lingua dei segni italiana<br> 
+- cancellare e ricominciare <br> 
+- far leggere al computer quanto scritto<br> 
 
 
 ## Riferimenti progettuali
-Non ho sfruttato un modello preciso come riferimento progettuale, ho riflettuto più che altro sui diversi contenuti 
-da inserire e le loro esigenze di impaginazione e creazione.
-
-L'aspetto più importante è stato quello di scegliere una modalità di presentazione che valorizzasse ed esaltasse 
-il contenuto e la funzionalità degli argomenti trattati. 
+Non sono stati utilizzati riferimenti progettuali precisi, la piattaforma è stata costruita in base alle esigenze del progetto e alle conoscenze e del programmatore.
+L'unico riferimento sfruttato è stato quello della classica visualizzazione di un programma televisivo tradotto per non udenti. Affianco alla trasmissione infatti, è posta l'immagine del traduttore/traduttrice che in tempo reale racconta quanto viene detto all'interno del programma.
 
 
 
