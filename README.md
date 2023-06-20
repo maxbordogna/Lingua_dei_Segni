@@ -24,6 +24,7 @@ Nel mio caso è stato realizzato un sistema di tradizione simultanea dell'alfabe
 ## Riferimenti progettuali
 Non sono stati utilizzati riferimenti progettuali precisi, la piattaforma è stata costruita in base alle esigenze del progetto e alle conoscenze e del programmatore.
 L'unico riferimento sfruttato è stato quello della classica visualizzazione di un programma televisivo tradotto per non udenti. Affianco alla trasmissione infatti, è posta l'immagine del traduttore/traduttrice che in tempo reale racconta quanto viene detto all'interno del programma.
+![tv_non_udenti](https://github.com/maxbordogna/Lingua_dei_Segni/assets/126773844/a414877f-8d00-4de5-9fa9-ed77b951d61d)
 
 
 
