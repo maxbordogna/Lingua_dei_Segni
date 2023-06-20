@@ -55,72 +55,57 @@ Scrittura in corso<br><br>
 
 
 ## Tecnologia usata
-La particolarità caratterizzante di questa piattaforma è l'utilizzo e il riconoscimento delle gestures, costruita con Javascript Vanilla e grazie all'implementazione per l'appunto del riconoscimento delle gesture di Mediapipe un singolo 
-
-L'intero sito è strutturato su diverse pagine, ogniuna appartenente ad un capitolo specifico, per raggiungerle basta utilizzare la navigazione in alto a sinistra e cliccare la pagina desiderata.
-Tutte le pagine sono strutturate con un sistema di 10 colonne, colonne che vengono sfruttate per l'organizzazione dei contenuti.
-Qui di seguito un esempio di suddivisione in colonne nel CSS:
-```CSS
-/*----------------------------------------------*/
-/*esempio suddivisione in colonne*/
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-```
-<br>
-L'interfaccia interattiva invece riconosce in numeri a dipendenza della distanza tra i vari punti della mano, di seguito un esempio:
-
+La particolarità caratterizzante di questa piattaforma è l'utilizzo e il riconoscimento delle gestures, costruita con Javascript vanilla e grazie all'implementazione per l'appunto del riconoscimento delle gesture di Mediapipe, è possibile istruire il programma a riconoscere determinati gesti della mano e ad associargli un significato. Nel mio caso l'intero alfabeto della lingua dei segni italiana è stato codificato.
+<br>Qui di seguito vi è un'esempio di come è stata costruita la gesture della lettera "A":
 ```JavaScript
 //----------------------------------------------
-//Esempio codice riconoscimento dei numeri
-if (hands.length == 1) {
-
-			const manoA = hands[0]
-
-			const indiceA  = manoA.keypoints[8]
-			const polliceA = manoA.keypoints[4]
-			const medioA = manoA.keypoints[12]
-			const anulareA = manoA.keypoints[16]
-			const mignoloA = manoA.keypoints[20]
-			const palmoA = manoA.keypoints[0]
-			const centroA = manoA.keypoints[5]
-			const centroB = manoA.keypoints[13]
-
-			const indicepalmo = dist(indiceA.x, indiceA.y, palmoA.x, palmoA.y)
-			const pollicecentro = dist(polliceA.x, polliceA.y, centroA.x, centroA.y)
-			const mediopalmo = dist(medioA.x, medioA.y, palmoA.x, palmoA.y)
-			const anularepalmo = dist(anulareA.x, anulareA.y, palmoA.x, palmoA.y)
-			const mignolopalmo = dist(mignoloA.x, mignoloA.y, palmoA.x, palmoA.y)
-			const pollicecentroB = dist(polliceA.x, polliceA.y, centroB.x, centroB.y)
-
-			if (pollicecentro>50 && indicepalmo>50 && mediopalmo>50 && anularepalmo>50 && mignolopalmo<100){
-				background(255)
-				image(img1, width/2-371/2/2, height/2- 586/2/2, 371/2, 586/2)
-			}
-			else if (pollicecentro>50 && indicepalmo>100 && mediopalmo>100 && anularepalmo<100 && mignolopalmo<100){
-				background(255)
-				image(img2, width/2-371/2/2, height/2- 586/2/2, 371/2, 586/2)
-			}
-			else if (pollicecentro>50 && indicepalmo>100 && mediopalmo<100 && anularepalmo<100 && mignolopalmo<100){
-				background(255)
-				image(img3, width/2-371/2/2, height/2- 586/2/2, 371/2, 586/2)
-			}
-			else if (pollicecentro>50 && indicepalmo<100 && mediopalmo<100 && anularepalmo<100 && mignolopalmo<100){
-				background(255)
-				image(img4, width/2-371/2/2, height/2- 586/2/2, 371/2, 586/2)
-			}
-			else if (pollicecentro<50 && indicepalmo<100 && mediopalmo<100 && anularepalmo<100 && mignolopalmo<100){
-				background(255)
-				image(img5, width/2-371/2/2, height/2- 586/2/2, 371/2, 586/2)
-			}
-			else if (pollicecentro>50 && indicepalmo>100 && mediopalmo>100 && anularepalmo>100 && mignolopalmo>100){
-				background(255)
-				image(img0, width/2-371/2/2, height/2- 586/2/2, 371/2, 586/2)
-			}}
+//Lettera A
+	A.addCurl(fp.Finger.Thumb, NO_CURL, 1.0);
+	A.addCurl(fp.Finger.Thumb, HALF_CURL, 0.9);
+	A.addDirection(fp.Finger.Thumb, fp.FingerDirection.VerticalUp, 0.5);
+  
+	// altre dita
+	for (let finger of [fp.Finger.Index, fp.Finger.Middle, fp.Finger.Ring, fp.Finger.Pinky]) {
+	  A.addCurl(finger, FULL_CURL, 1.0);
+	}
+ ```
+La lettera viene quindi riconosciuta, mostrata sullo schermo e, se confermata mantenendola in vista per qualche secondo viene scritta all'interno del file HTML. Una volta composto un testo è possibile azzerare il tutto semplicemente mostrando due mani alla webcam.
+<br>Qui di seguito la costruzione del codice del Frame Counter in grado di attendere prima di confermare una lettera:
+```JavaScript
+//----------------------------------------------
+//Counter
+function FrameCounter() {
+	let frameCount = 0;
+	let startTime = performance.now();
+	let running = true;
+  
+	function update() {
+		if (running) {
+			frameCount++;
+		  }
+	  
+  
+	  requestAnimationFrame(update);
+	}
+  
+	update();
+  
+	return {
+	  getFrameCount: function () {
+		return frameCount;
+	  },
+	  restart: function () {
+		frameCount = 0;
+		startTime = performance.now();
+		running = true;
+	  },
+	};
+  }
 ```
 
+
 ## Target e contesto d’uso
-Il target di questo progetto sono persone di ogni età con accesso ad un computer, che hanno la necessità o il desiderio di informarsi sul tema del conteggio con le mani. 
-Il contesto d'uso può quindi variare, potrebbe essere semplicemente un utilizzo personale e casalingo, oppure per scopi didattici può essere fruito in contesti educativi.
+Una versione più prestante dell'interfaccia potrebbe risultare utile sia per degli scopi educativi, sia per scopi funzionali, ovvero lo scambio vero e proprio di informazioni tra persone non udenti e persone che non conoscono la lingua dei segni. La versione attuale presenta ancora parecchi limiti e non permette un funzionamento garantito, ma sicuramente può essere una buona base. Io stesso costruendola ho imparato l'alfabeto della lingua dei segni abbastanza facilmente.
 
 
 
