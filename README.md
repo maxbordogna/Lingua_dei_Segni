@@ -55,6 +55,8 @@ Scrittura in corso<br><br>
 
 
 ## Tecnologia usata
+La particolarità caratterizzante di questa piattaforma è l'utilizzo e il riconoscimento delle gestures, costruita con Javascript Vanilla e grazie all'implementazione per l'appunto del riconoscimento delle gesture di Mediapipe un singolo 
+
 L'intero sito è strutturato su diverse pagine, ogniuna appartenente ad un capitolo specifico, per raggiungerle basta utilizzare la navigazione in alto a sinistra e cliccare la pagina desiderata.
 Tutte le pagine sono strutturate con un sistema di 10 colonne, colonne che vengono sfruttate per l'organizzazione dei contenuti.
 Qui di seguito un esempio di suddivisione in colonne nel CSS:
