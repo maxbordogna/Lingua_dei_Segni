@@ -1016,7 +1016,7 @@ let ultimaLettera = -1;
 					//ctx.fillText(name + " [" + score.toFixed(1) + "]",width/2, height/2)
 					//ctx.fillText(name, width/2, height/2+250/4)
 					ctx.fillText("Mostra una lettera con la mano DESTRA e mantieni la posizione per confermarla", width/80, height*0.45)
-					ctx.fillText("Mostra la mano sinistra per cancellare quanto scritto", width/80, height*0.465)
+					ctx.fillText("Mostra la mano SINISTRA per cancellare quanto scritto", width/80, height*0.465)
 
 					//document.getElementById("testo").innerHTML = ""
 	}
