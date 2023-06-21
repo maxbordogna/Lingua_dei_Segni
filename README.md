@@ -34,7 +34,7 @@ Il design è quindi estremamente semplice, nello stato di partenza la piattaform
 <br>
 Delle immagini rappresentative dell'alfabeto italiano della lingua dei segni e dei testi istruttivi:<br>
 <br>"Mostra una lettera con la mano DESTRA e mantieni la posizione per confermarla"<br>
-"Mostra due mani per cancellare quanto scritto"
+"Mostra la mano SINISTRA per cancellare quanto scritto"
 <br><br>
 Nel momento in cui l'utente mostra la mano destra e viene riconosciuta, spariscono le istruzioni e compare in basso a sinistra la lettera riconosciuta e in centro i keypoints della mano visibile nella webcam.
 <br><br>
