@@ -8,7 +8,7 @@ Elaborato 3: Manipolazione
 Autore: Massimo Bordogna  
 [MediaPipe demo-ES6](https://ixd-supsi.github.io/2023/esempi/mp_hands/es6/1_landmarks)
 
-Breve video dimostrativo<br>
+Download breve video dimostrativo<br>
 https://github.com/maxbordogna/Lingua_dei_Segni/blob/main/00_DOCUMENTAZIONE/video_dimostrativo.mp4
 
 ## Introduzione e tema
