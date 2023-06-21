@@ -903,7 +903,7 @@ let ultimaLettera = -1;
 					ctx.textAlign = 'left'
 					//ctx.fillText(name + " [" + score.toFixed(1) + "]",width/2, height/2)
 					//ctx.fillText(name, width/2, height/2+250/4)
-					ctx.fillText(name, -width/95, height - (height/4.5))
+					ctx.fillText(name, -width/95, height*0.75)
 
 
 				if (name && counter.getFrameCount() > 200 &&ultimaLettera !== name){
