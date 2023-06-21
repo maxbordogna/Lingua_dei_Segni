@@ -1022,8 +1022,10 @@ let ultimaLettera = -1;
 					ctx.textAlign = 'left'
 					//ctx.fillText(name + " [" + score.toFixed(1) + "]",width/2, height/2)
 					//ctx.fillText(name, width/2, height/2+250/4)
+					ctx.fillText("Attiva il volume del computer", width/80, height*0.335)
 					ctx.fillText("Mostra una lettera con la mano DESTRA e mantienila qualche secondo per confermarla", width/80, height*0.35)
-					ctx.fillText("Mostra la mano SINISTRA e mantienila qualche secondo per cancellare quanto scritto", width/80, height*0.365)
+					ctx.fillText("Mostra la mano DESTRA aperta e mantienila qualche secondo per effettuare uno spazio", width/80, height*0.365)
+					ctx.fillText("Mostra la mano SINISTRA e mantienila qualche secondo per cancellare quanto scritto", width/80, height*0.38)
 
 					//document.getElementById("testo").innerHTML = ""
 	}
