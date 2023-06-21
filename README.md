@@ -72,7 +72,7 @@ La particolarità caratterizzante di questa piattaforma è l'utilizzo e il ricon
 	  A.addCurl(finger, FULL_CURL, 1.0);
 	}
  ```
-La lettera viene quindi riconosciuta, mostrata sullo schermo e, se confermata mantenendola in vista per qualche secondo viene scritta all'interno del file HTML. Una volta composto un testo è possibile azzerare il tutto semplicemente mostrando due mani alla webcam.
+La lettera viene quindi riconosciuta, mostrata sullo schermo e, se confermata mantenendola in vista per qualche secondo viene scritta all'interno del file HTML. Una volta composto un testo è possibile azzerare il tutto semplicemente mostrando la mano sinistra alla webcam. Ogni operazione però richiede qualche secondo di tempo per essere confermata, diminuendo così errori di computazione.
 <br>Qui di seguito la costruzione del codice del Frame Counter in grado di attendere prima di confermare una lettera:
 ```JavaScript
 //----------------------------------------------
