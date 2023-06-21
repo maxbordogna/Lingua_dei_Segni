@@ -37,11 +37,9 @@ Delle immagini rappresentative dell'alfabeto italiano della lingua dei segni e d
 <br>"Mostra la mano DESTRA aperta e mantieni la posizione per effettuare uno spazio"<br>
 <br>"Mostra la mano SINISTRA per cancellare quanto scritto"
 <br><br>
-Nel momento in cui l'utente mostra la mano destra e viene riconosciuta, spariscono le istruzioni e compare in basso a sinistra la lettera riconosciuta con in centro i keypoints della mano visibile nella webcam.
+Nel momento in cui l'utente mostra la mano destra e viene riconosciuta, spariscono le istruzioni e compare in basso a sinistra la lettera riconosciuta con in centro i keypoints della mano visibile nella webcam. Se l'utente mantiene la lettera visibile per qualche secondo essa viene confermata e scritta in alto a sinistra, aggiungendo altre lettere si possono comporre svariate parole.
 <br><br>
-Se l'utente mantiene la lettera visibile per qualche secondo essa viene confermata e scritta in alto a sinistra, aggiungendo altre lettere si possono comporre svariate parole.
-<br><br>
-Sollevando due mani l'utente ha la possibilità di cancellare tutto ciò che è stato scritto.
+Sollevando la mano sinistra l'utente ha la possibilità di cancellare tutto ciò che è stato scritto, purtroppo per dei limiti di conoscenze personali non è possibile né cancellare l'ultima lettera digitata, né scrivere delle doppie es. "ll" "ss" "tt".
 
 
 Schermata base<br>
