@@ -43,14 +43,18 @@ Se l'utente mantiene la lettera visibile per qualche secondo essa viene conferma
 Sollevando due mani l'utente ha la possibilità di cancellare tutto ciò che è stato scritto.
 
 
+Schermata base<br>
+<img width="175" alt="Interazione_1" src="https://github.com/maxbordogna/Lingua_dei_Segni/assets/126773844/db6685f8-cc92-48c9-a3b8-d89715e0c9da">
+<br>
 
+Mano destra e lettera riconosciuta<br>
+<img width="175" alt="Interazione_2" src="https://github.com/maxbordogna/Lingua_dei_Segni/assets/126773844/0abb3503-49bb-42ca-a7b1-09659a6f8765">
+<br><br>
+Scrittura in corso<br>
+<img width="175" alt="Interazione_3" src="https://github.com/maxbordogna/Lingua_dei_Segni/assets/126773844/136f439a-ed9e-45be-832c-e90fdcd3f6a3">
 
-[<img src="img_readme/interazione_1.png" width="200" alt="Interazione base">]()<br>
-Schermata base<br><br>
-[<img src="img_readme/interazione_2.png" width="200" alt="Interazione in corso">]()<br>
-Mano destra riconosciuta<br><br>
-[<img src="img_readme/catalogo.png" width="200" alt="Catalogazione">]()<br>
-Scrittura in corso<br><br>
+<br>
+<br>
 
 
 
