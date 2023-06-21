@@ -903,10 +903,10 @@ let ultimaLettera = -1;
 					ctx.textAlign = 'left'
 					//ctx.fillText(name + " [" + score.toFixed(1) + "]",width/2, height/2)
 					//ctx.fillText(name, width/2, height/2+250/4)
-					ctx.fillText(name, -width/95, height - (height/9))
+					ctx.fillText(name, -width/95, height - (height/4.5))
 
 
-				if (name && counter.getFrameCount() > 255 &&ultimaLettera !== name){
+				if (name && counter.getFrameCount() > 200 &&ultimaLettera !== name){
 				// voce
 				console.log(name);
 
@@ -986,8 +986,13 @@ let ultimaLettera = -1;
 			
 		}
 		else if (handedness == "Left"){
+				console.log(counter.getFrameCount());
+				counter
+				console.log(counter.getFrameCount());
+				console.log("mano sinistra");
+				if (counter.getFrameCount() > 200){
 			console.log("cancellooooo");
-			document.getElementById("testo").innerHTML = ""
+			document.getElementById("testo").innerHTML = ""}
 		}
 		else {
 					console.log(counter.getFrameCount());
@@ -1008,15 +1013,17 @@ let ultimaLettera = -1;
 
 	
 	else {
-		
+		console.log(counter.getFrameCount());
+		counter.restart();
+		console.log(counter.getFrameCount());
 		console.log("check");
 		ctx.font = '12px Roboto Mono'
 					ctx.fillStyle = 'black'
 					ctx.textAlign = 'left'
 					//ctx.fillText(name + " [" + score.toFixed(1) + "]",width/2, height/2)
 					//ctx.fillText(name, width/2, height/2+250/4)
-					ctx.fillText("Mostra una lettera con la mano DESTRA e mantieni la posizione per confermarla", width/80, height*0.45)
-					ctx.fillText("Mostra la mano SINISTRA per cancellare quanto scritto", width/80, height*0.465)
+					ctx.fillText("Mostra una lettera con la mano DESTRA e mantienila qualche secondo per confermarla", width/80, height*0.35)
+					ctx.fillText("Mostra la mano SINISTRA e mantienila qualche secondo per cancellare quanto scritto", width/80, height*0.365)
 
 					//document.getElementById("testo").innerHTML = ""
 	}
